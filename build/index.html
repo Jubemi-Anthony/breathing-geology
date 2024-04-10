@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An informative website about studying Geology">
+    <title>Acme Rockets</title>
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/unigrid-phantom-science-vol-1/60/003_042_planet_earth_globe_world_worldwide_space_cosmos_science_solar_system-64.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="./js/main.js"></script>
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="bg-teal-700 sticky text-white top-0 z-10">
+        <section class="max-w-5xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="font-medium text-3xl"><a href="#hero">🌍Breathing Geology</a></h1>
+            <div>
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
+                    &#9776;
+                </button>
+                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                    <a href="#branches" class="hover:opacity-90">Branches</a>
+                    <a href="#experiences" class="hover:opacity-90">Experiences</a>
+                    <a href="#ask" class="hover:opacity-90">Questions</a>
+                </nav>
+            </div>
+        </section>
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+            <button class="text-8xl self-end px-6">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hero" class="w-full text-center py-6 hover:opacity-90">Home</a>
+                <a href="#branches" class="w-full text-center py-6 hover:opacity-90">Branches</a>
+                <a href="#experiences" class="w-full text-center py-6 hover:opacity-90">Experiences</a>
+                <a href="#ask" class="w-full text-center py-6 hover:opacity-90">Ask A Question</a>
+                <a href="#footer" class="w-full text-center py-6 hover:opacity-90">Legal</a>
+            </nav>
+        </section>
+    </header>
+    <main class="max-w-5xl mx-auto">
+        <section id="hero" class="widescreen:section-min-height tallscreen:section-min-height p-6 scroll-mt-40 mb-12 flex flex-col-reverse justify-center items-center sm:flex-row gap-8">
+            <article class="sm:w-1/2">
+                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+                    We <span class="text-indigo-700 dark:text-indigo-300">explore the Earth</span> and unravle its mysteries...
+                </h2>
+                <p class="max-w-md mt-4 text-center text-slate-700 dark:text-slate-400 text-2xl sm:text-left">
+                    Geology isn't just limited to the materials within the Earth, Geology is inside you!
+                </p>
+                <p class="max-w-md mt-4 text-center text-slate-700 dark:text-slate-400 text-2xl sm:text-left">
+                    Everyone is a Geologist!
+                </p>
+            </article>
+            <img class="sm:w-1/2 w-2/3" src="https://cdn.pixabay.com/photo/2019/07/03/13/33/emergency-4314583_1280.png" alt="Geology">
+        </section>
+
+        <hr class="mx-auto w-1/2 h-0.5 bg-black dark:bg-white">
+        
+        <section id="branches" class="widescreen:section-min-height tallscreen:section-min-height p-6 my-12 scroll-mt-20">
+            <h2 class="font-bold mb-6 text-center text-4xl text-slate-900 dark:text-white sm:text-5xl">
+                The Branches
+            </h2>
+            <ul class="list-none flex flex-col md:flex-row mx-auto my-12 items-center gap-8">
+                <li class="min-h-80 w-2/3 dark:bg-black sm:w-5/6 flex items-center border border-slate-900 flex-col border-solid dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="https://cdn.pixabay.com/photo/2014/12/21/23/35/rock-575600_640.png" alt="Petrology" class="w-1/2 mb-6">
+                    <h3 class="text-slate-900 text-center text-3xl dark:text-white">
+                        Petrology
+                    </h3>
+                    <p class="hidden sm:block text-center text-2xl text-slate-400">
+                        The study of rocks.
+                    </p>
+                    <p class="sm:hidden text-center text-2xl text-slate-400">
+                        ⛏️⛰️
+                    </p>
+                </li>
+                <li class="min-h-80 w-2/3 dark:bg-black sm:w-5/6 flex items-center border border-slate-900 flex-col border-solid dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="https://cdn.pixabay.com/photo/2023/03/26/00/00/kryptonite-7877171_640.png" alt="Mineralogy" class="w-1/2 mb-6">
+                    <h3 class="text-slate-900 text-center text-3xl dark:text-white">
+                        Mineralogy
+                    </h3>
+                    <p class="hidden sm:block text-center text-2xl text-slate-400">
+                        The study of minerals
+                    </p>
+                    <p class="sm:hidden text-center text-2xl text-slate-400">
+                        💎🧱
+                    </p>
+                </li>
+                <li class="min-h-80 w-2/3 dark:bg-black sm:w-5/6 flex items-center border border-slate-900 flex-col border-solid dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="https://cdn.pixabay.com/photo/2014/04/03/11/08/nautilus-311851_640.png" alt="Paleontology" class="w-1/2 mb-6">
+                    <h3 class="text-slate-900 text-center text-3xl dark:text-white">
+                        Paleontology
+                    </h3>
+                    <p class="hidden sm:block text-center text-2xl text-slate-400">
+                        The study of fossils
+                    </p>
+                    <p class="sm:hidden text-center text-2xl text-slate-400">
+                        🌿☠
+                    </p>
+                </li>
+                <li class="min-h-80 w-2/3 dark:bg-black sm:w-5/6 flex items-center border border-slate-900 flex-col border-solid dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/15/19/20/earthquake-5657776_1280.png" alt="Seismology" class="w-2/3 mb-8">
+                    <h3 class="text-slate-900 text-center text-3xl dark:text-white">
+                        Seismology
+                    </h3>
+                    <p class="hidden sm:block text-center text-2xl text-slate-400">
+                        Study of seismic waves
+                    </p>
+                    <p class="sm:hidden text-center text-2xl text-slate-400">
+                        💣🌋
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="mx-auto w-1/2 h-0.5 bg-black dark:bg-white">
+        
+        <section id="experiences" class="widescreen:section-min-height tallscreen:section-min-height p-6 my-12 scroll-mt-20">
+            <h2 class="font-bold mb-6 text-center text-4xl text-slate-900 dark:text-white sm:text-5xl">
+                Experiences
+            </h2>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-xl relative">
+                    <p class="text-2xl sm:text-3xl text-left text-white dark:text-slate-400 before:content-['\201c'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Before entering Uniben I was excited about the compliments I received for getting to study Geology. However on getting here I discovered that it was a sweet course although there were some challenging parts. The journey was far from smooth but overall I love Geology. I love what I do and I love the branch of Geology I am into. I love the application and everything about it. It's a bitter sweet story which is what makes it interesting. I don't know everything about Geology but I am perfect in the aspects I know and I know it from my heart.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-400">
+                    &#8212;Joy O. Uloho
+                </figcaption>
+            </figure>
+            <!-- Humour is not like opportunity, It doesn't come once. -->
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-xl relative">
+                    <p class="text-2xl sm:text-3xl text-left text-white dark:text-slate-400 before:content-['\201c'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        I remember after gaining admission into the university to study Geology, I was happy because I had gotten admission on the first try but on the other hand, I was sad because that wasn't what I wanted and thought of transferring to another course of study, but I decided to give it a try first.
+                        <br>
+                        The first lecture I received in Geology made me feel better about the course of study. I thought to myself "this isn't bad at all....it's actually interesting and wonderful.... I'm definitely going to stay here (study it)". <br>
+                        But overtime as I attended more lectures, I started to feel lost because the information was getting "too much". <br>
+                        But I learned that geology is a course that feels "too much" because it unravels the history and processes within the earth, and other terrestrial planets which is a lot 😂 so I had to take it one step at a time.<br>
+                        Geology contains various fields of Interest which are all enlightening and Captivating and all of these boils down to studying properties and processes of the earth.
+                    </p> 
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-400">
+                    &#8212;Precious O. Eigbiluese
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-xl relative">
+                    <p class="text-2xl sm:text-3xl text-left text-white dark:text-slate-400 before:content-['\201c'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Studying Geology felt like stepping into a world where the Earth's history was waiting to be unlocked. I had always wanted to study Geology. At first, I was so happy I got it, but then at some point I didn't know what I was doing. Everything confused me in my first year. This continued into the first semester of my second year. During those times I realised that I didn't have any solid reason for choosing this. I was on the verge of giving up. Over the short break I did some thinking and it was clear to me that the reason I felt that way was because I wasn't letting myself enjoy the course at all. When I returned I was determined to let Geology flow through and since then it has never been the same. I started to engage in stimulating discussions with faculty members and fellow students about ongoing research projects and the latest advancements in the field of geology. This was a life changing decision. I got to enjoy how brain racking Geology is. The branches of Geology I enjoyed learning the most were Petrology, Sedimentology and Geotectonics. Geology changed the way I view my surroundings. Everywhere I go I always try to bring the Geology out of the place, and I hope to use it to change the world in my own little way.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-400">
+                    &#8212;Rita I. Godfrey 
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-xl relative">
+                    <p class="text-2xl sm:text-3xl text-left text-white dark:text-slate-400 before:content-['\201c'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Studying Geology in Nigeria, not as easy as it can be.
+                        It is a lot of fun studying the activities in space and those beneath the earth surface.
+                        I learnt a lot from my stay in geology. I'd like to compare ourselves with doctors because they tend to dissect the activities that occur in the innermost part of humans, so also, we dissect the activities that occurred/occurs in the innermost parts of the earth.
+                        <br><br>
+                        Furthermore, Geology taught me how to broaden my imagination, which is all things beautiful. 
+                        The fieldwork exercise is one to talk about (it is not all that comfortable) but it is one to commend. The activities and the lessons learnt are like bringing those things that be not (our imaginations) as though they were.
+                        All though it is stressful with a lot of work and so much to comprehend in a short time, like trying to fathom what occurred 3 billion years ago in three months. Geology is a beautiful Course. We can boldly talk about what has occurred, what is occurring and what will occur in a particular region.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-400">
+                    &#8212;Aisosa S. Egharevba
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-xl relative">
+                    <p class="text-2xl sm:text-3xl text-left text-white dark:text-slate-400 before:content-['\201c'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        My experience in geology was a nice one, it was interesting to learn about the processes that formed the earth and in the course of the journey meeting some really nice people that I'm going to miss.
+                        Although there were moments I felt like those scientists should have stayed at home 😂😂😂.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-400">
+                    &#8212;God'sFavour O. Nwajei
+                </figcaption>
+            </figure>
+        </section>
+
+        <hr class="mx-auto w-1/2 h-0.5 bg-black dark:bg-white">
+        
+        <section id="ask" class="widescreen:section-min-height tallscreen:section-min-height p-6 my-12 scroll-mt-16">
+            <h2 class="font-bold mb-6 text-center text-4xl text-slate-900 dark:text-white sm:text-5xl">
+                Have A Question?
+            </h2>
+            <form class="max-w-5xl mx-auto text-2xl sm:text-3xl flex flex-col items-start gap-4">
+                <label for="subject">Subject</label>
+                <input type="text" required minlength="3" maxlength="100" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none" id="subject" placeholder="Enter the Subject of Your Question">
+                <label for="message">Question</label>
+                <textarea placeholder="Enter your Question." name="message" id="message" cols="30" rows="10" required minlength="3" maxlength="100" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"></textarea>
+                <button class="bg-teal-700 hover:bg-teal-600 w-48 rounded-xl border border-solid border-slate-900 text-white p-3 active:bg-teal-400 dark:border-none">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+        <section class="max-w-5xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>Geology Department, University of Benin</h2>
+                Benin City, Ugbowo. <br>
+                Email: <a href="mailto:nmgsuniben00@gmail.com" class="text-slate-900 font-semibold">nmgsuniben00@gmail.com</a> <br>
+                Phone: <a href="tel:+2348120210738" class="text-slate-900 font-semibold">+2348120210738</a>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="#branches" class="hover:opacity-90">Branches</a>
+                <a href="#experiences" class="hover:opacity-90">Experiences</a>
+                <a href="#ask" class="hover:opacity-90">Ask A Question</a>
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy; 2024</p>
+                <p class="text-right">All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
